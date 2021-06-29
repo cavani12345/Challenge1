@@ -1,0 +1,13 @@
+#Description{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}

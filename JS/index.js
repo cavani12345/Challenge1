@@ -3,7 +3,7 @@ function userData(data){
     result = `<tr>
         <th>Name</th>
         <th>Email</th>
-        <th>View Detail</th>
+        <th>View User Post</th>
         </tr>` ; 
     result += data.map(function(item){
 

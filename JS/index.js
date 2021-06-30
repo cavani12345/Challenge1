@@ -1,5 +1,4 @@
-
-  function userData(data){
+function userData(data){
     var display = document.getElementById('userinfo');
     result = `<tr>
         <th>Name</th>
@@ -17,23 +16,24 @@
         `
       }).join('')
 
-      display.innerHTML = result
+    display.innerHTML = result
       }
 
-      function fetchData(){
+function fetchData(){
       fetch(' https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
-        .then(data => userData(data))}
-        fetchData();
+        .then(data => userData(data))
+      }
+fetchData();
 
     
-     function fetchPost(data){
+function fetchPost(data){
       fetch(` https://jsonplaceholder.typicode.com/users/${data}/posts`)
            .then(response => response.json())
            .then(data => displayPost(data))
      }  
      
-     function displayPost(post){
+function displayPost(post){
       var display = document.getElementById('userpost');
       result = `` ; 
 
@@ -45,6 +45,5 @@
           `
         }).join('')
   
-        display.innerHTML = result
-       
-     }
+      display.innerHTML = result; 
+}

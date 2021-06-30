@@ -44,6 +44,7 @@ function displayPost(post){
            <p>${item.body}</p>
           `
         }).join('')
+        
   
       display.innerHTML = result; 
 }
